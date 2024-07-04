@@ -1,11 +1,11 @@
 # Data Analytics Customer Segmentation
 
 ## Goal of the project
-The purpose of this project is to conduct a Customer Segmentation Analysis for an Automobile bike Company. Customer segmentation is performed by developing a RFM Model. RFM (Recency, Frequency, Monetary) analysis is a behavior-based approach grouping customers into segments. It groups the customers on the basis of their previous purchase transactions. In this analysis the customer segment was divided into 11 groups. The analysis will help in determining which customers segments should be targeted in order to enhance sales revenue for the company. A <b>Sales Dashboard for Customer Segmentation</b> is developed using <b>Tableau</b> and the data quality assessment and analysis is done using <b>Python</b>.
+The objective of this project is to carry out a Customer Segmentation Analysis for an automobile bike company. Customer segmentation is executed through the development of an RFM Model. RFM (Recency, Frequency, Monetary) analysis is a behavior-based methodology that classifies customers into segments based on their past purchase behaviors. This analysis categorizes customers into 11 distinct groups. The purpose of this segmentation is to identify which customer groups should be targeted to boost sales revenue for the company. A <b>Sales Dashboard for Customer Segmentation</b> has been created using <b>Tableau</b>, with data quality assessment and analysis conducted through <b>Python</b>.
 
 
 ## Tableau Dashboard
-The Sales Dashboard for Customer Segmentation can be found [here](https://public.tableau.com/views/SalesDashboard_17201045476280/RFMDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).<br>
+The Sales Dashboard for Customer Segmentation is accessible [here](https://public.tableau.com/views/SalesDashboard_17201045476280/RFMDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).<br>
 <img src="data%20visualization/Sales%20Dashboard.gif" height="500" align="middle"><br>
 
 <b>In case of failure of loading Jupyter Notebooks on Github, the following notebooks can be found in nbviewer. Click on the respective hyperlinks to view:</b>
