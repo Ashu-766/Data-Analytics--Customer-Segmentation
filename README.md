@@ -64,7 +64,7 @@ After cleaning the data, exploratory analysis was conducted, revealing the follo
 - <b>Bike purchases over last 3 years by Gender</b><br> 
   - Most bike purchases over the last three years were made by females, accounting for approximately 51% of the purchases compared to 49% by males.
   - Numerically, female purchases exceeded male purchases by 10,000.
-  <img src="data%20visualization/Female%20vs%20Male%20Bike%20Purchases.PNG" height="400" align="middle">
+  <img src="images/Female vs Male Bike Purchases.png" height="400" align="middle">
   
 - <b>New vs Old Customers Job Industry Distribution</b><br> 
   - Most new customers come from the Manufacturing and Financial Services sectors (approximately 20% each).
@@ -76,8 +76,8 @@ After cleaning the data, exploratory analysis was conducted, revealing the follo
     <td><b>New Customers by Job Industry</b></td>
   </tr>
   <tr>
-    <td><img src="data%20visualization/Old%20Customers%20Job%20Industry.PNG" height="400" align="middle"></td>
-    <td><img src="data%20visualization/New%20Customers%20Job%20Industry.PNG" height="400" align="middle"></td>
+    <td><img src="images/Old Customers Job Industry.png" height="400" align="middle"></td>
+    <td><img src="images/New Customers Job Industry.png" height="400" align="middle"></td>
   </tr>
   </table>
 
@@ -91,8 +91,8 @@ After cleaning the data, exploratory analysis was conducted, revealing the follo
     <td><b>New Customers Wealth by Age Group</b></td>
   </tr>
   <tr>
-    <td><img src="data%20visualization/Old%20Customers%20Wealth%20Segment.PNG" height="400" align="middle"></td>
-    <td><img src="data%20visualization/New%20Customer%20Wealth%20Segment.PNG" height="400" align="middle"></td>
+    <td><img src="images/Old Customers Wealth Segment.png" height="400" align="middle"></td>
+    <td><img src="images/New Customer Wealth Segment.png" height="400" align="middle"></td>
   </tr>
   </table>
 
@@ -100,7 +100,7 @@ After cleaning the data, exploratory analysis was conducted, revealing the follo
   - New South Wales has the highest number of people who do not own a car.
   - In Victoria, the proportions are fairly even.
   - In Queensland, the number of people owning a car exceeds those who do not.
-  <img src="data%20visualization/Car%20Owners%20by%20State.PNG" height="400" align="middle">
+  <img src="images/Car Owners by State.png" height="400" align="middle">
 
 
 ### 3. RFM Analysis and Customer Segmentation
@@ -120,16 +120,16 @@ In this analysis the customer segment was divided into 11 groups. The groups bei
 - Almost lost Customers
 
 The current distribution of customer segments in the automobile business is illustrated below:
-<img src="data%20visualization/Customer%20Segment%20Distribution.PNG" height="400" align="middle">
+<img src="images/Customer Segment Distribution.png" height="400" align="middle">
 
 ### 4. RFM Analysis: Scatter Plots
 #### Recency vs Monetary :
 The visualization indicates that recent customers have made more purchases and generated more revenue compared to those who visited a while ago.<br>
-<img src="data%20visualization/Recency%20vs%20Monetary.PNG" height="400" align="middle"><br>
+<img src="images/Recency vs Monetary.png" height="400" align="middle"><br>
 
 #### Frequency vs Monetary : 
 The visualization shows that customers in the Platinum, Very Loyal, and Becoming Loyal segments have higher frequency and generate greater revenue.<br>
-<img src="data%20visualization/Frequency%20vs%20Monetary.PNG" height="400" align="middle"><br>
+<img src="images/Frequency vs Monetary.png" height="400" align="middle"><br>
 
 ## Datasets Used
 The datasets utilized in this analysis include:
