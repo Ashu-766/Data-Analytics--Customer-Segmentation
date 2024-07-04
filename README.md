@@ -56,8 +56,8 @@ After cleaning the data, exploratory analysis was conducted, revealing the follo
     <td><b>New Customers by Age Distribution</b></td>
   </tr>
   <tr>
-    <td><img src="data%20visualization/Old%20Customers%20Age%20Distribution.PNG" height="400" align="middle"></td>
-    <td><img src="data%20visualization/New%20Customers%20Age%20Distribution.PNG" height="400" align="middle"></td>
+    <td><img src="images/Old Customers Age Distribution.png" height="400" align="middle"></td>
+    <td><img src="images/New Customers Age Distribution.png" height="400" align="middle"></td>
   </tr>
   </table>
   
