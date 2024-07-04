@@ -18,38 +18,38 @@ The Sales Dashboard for Customer Segmentation is accessible [here](https://publi
 
 ## Analysis Approach
 ### 1. Data Quality Assessment and Data Cleaning
-The first step towards generating useful insights from the data was the data prepartion, quality assessment and data cleaning step. After the cleaning process exploratory data analysis on the dataset and identification customer purchasing behaviours to generate insights can be performed.
+The initial step to derive valuable insights from the data involved data preparation, quality assessment, and data cleaning. Once the data was cleaned, exploratory data analysis was performed to identify customer purchasing behaviors and generate insights.
 
-In the data cleaning step the data quality of the following datasets were first assesed. After a data quality assessment the following data quality issues was observed and the necessary process to mitigate the issue was followed :
+During the data cleaning phase, the quality of the following datasets was evaluated. After assessing data quality, the following issues were identified and addressed accordingly:
 - <b>CustomerDemographics.xlsx</b> :
-  - 1 Irrelevent column was present and such columns were dropped from the dataset.
-  - There were 5 columns were Missing values were present. For such columns based on the volumne of the missing values either the records were dropped or appropiate values were imputed at places of missing values
-  - For gender column there was no standardisation of data. Based on the values available the column data was standardised to remove data inconsistency.
-  - The Date of Birth column was transformed to create a new feature column 'Age' and 'Age Group' to check for discripency of age distribution. An <b>outlier</b> was observed and the record was removed.
-  - Checked whether there are duplicate records present in the dataset. In this dataset there were no duplicate records.
+  - One irrelevant column was found and removed from the dataset.
+  - Five columns contained missing values. Depending on the volume of missing data, either the records were removed or appropriate values were imputed.
+  - The gender column lacked standardization. The data was standardized to eliminate inconsistencies.
+  - The Date of Birth column was transformed to create new 'Age' and 'Age Group' features to check for discrepancies in age distribution. One outlier was identified and removed.
+  - Checked for duplicate records; none were found.
 - <b>NewCustomerList.xlsx</b> :
-  - 5 Irrelevent column was present and such columns were dropped from the dataset.
-  - There were 4 columns were Missing values were present. For such columns based on the volumne of the missing values either the records were dropped or appropiate values were imputed at places of missing values
-  - The Date of Birth column was transformed to create a new feature column 'Age' and 'Age Group' to check for discripency of age distribution.
-  - There was no data inconsistency.
-  - Checked whether there are duplicate records present in the dataset. In this dataset there were no duplicate records.
+  - Five irrelevant columns were found and removed.
+  - Four columns had missing values. Records with missing values were either dropped or imputed based on the volume of missing data.
+  - The Date of Birth column was used to create 'Age' and 'Age Group' features to check for age distribution discrepancies.
+  - No data inconsistencies were found.
+  - Checked for duplicate records; none were found.
 - <b>Transaction_data.xlsx </b>:
-  - The product_first_sold_date column is not in datetime format. The data type of this column was changed from int64 to datetime format.
-  - There were 7 columns were Missing values were present. For such columns based on the volumne of the missing values either the records were dropped or appropiate values were imputed at places of missing values
-  - A new feature column 'Profit' was created which is basically the difference between list price and standard price.
-  - There was no data inconsistency.
-  - Checked whether there are duplicate records present in the dataset. In this dataset there were no duplicate records.
+  - The product_first_sold_date column was not in datetime format. It was converted from int64 to datetime.
+  - Seven columns had missing values. Depending on the volume, records were either dropped or imputed.
+  - A new 'Profit' feature was created as the difference between the list price and standard price.
+  - No data inconsistencies were found.
+  - Checked for duplicate records; none were found.
 - <b>CustomerAddress.xlsx</b> :
-  - For states column there was no standardisation of data. Based on the values available the column data was standardised to remove data inconsistency.
-  - There were certain customer IDs from Customer Dempgraphics table which were getting dropped in the Address table.
+  - The states column lacked standardization. It was standardized to remove inconsistencies.
+  - Some customer IDs from the Customer Demographics table were missing in the Address table.
 
 ### 2. Exploratory Data Analysis on Customer Segments
-After the data cleaning process, exploratory analysis on the dataset is performed and the following insights are obtained :
+After cleaning the data, exploratory analysis was conducted, revealing the following insights:
 - <b>New vs Old Customers Age Distribution</b><br> 
-  - Most New customers are aged between 40-49 also for Old Customers the most of them are aged between 40-49
-  - The lowest number of customers for both the types of customers is present in the age bracket under 20 and above 80 age groups.
-  - The automobile company is popular among New Customers among the age groups 20-29 and 40-49. 
-  - A steep drop in customers is observed in the 30-39 age group among the New Customers<br>
+  - Most new and old customers are aged between 40-49.
+  - The fewest customers are in the under-20 and over-80 age groups for both new and old customers.
+  - The company is popular among new customers aged 20-29 and 40-49.
+  - A significant drop in customers is observed in the 30-39 age group among new customers.<br>
   <table>
   <tr>
     <td><b>Old Customers by Age Distribution</b></td>
@@ -62,14 +62,14 @@ After the data cleaning process, exploratory analysis on the dataset is performe
   </table>
   
 - <b>Bike purchases over last 3 years by Gender</b><br> 
-  - Most bike puechases are done by Feamale over the last 3 years. Approximately 51% of the bike purchases are done by Female compared to 49% of the purchases being done by Male.
-  - The Female purchases are 10,000 more than that of Male purchases (numerically).
+  - Most bike purchases over the last three years were made by females, accounting for approximately 51% of the purchases compared to 49% by males.
+  - Numerically, female purchases exceeded male purchases by 10,000.
   <img src="data%20visualization/Female%20vs%20Male%20Bike%20Purchases.PNG" height="400" align="middle">
   
 - <b>New vs Old Customers Job Industry Distribution</b><br> 
-  - Most New customers are from the Manufacturing and Financial Services sector (approx 20% of the New Customers).
-  - The lowest number of customers are from the Agriculture and Telecom sector approx 3%.
-  - Similar trend is observed among Old Customers as well.<br>
+  - Most new customers come from the Manufacturing and Financial Services sectors (approximately 20% each).
+  - The fewest customers are from the Agriculture and Telecom sectors (approximately 3% each).
+  - Similar trends are observed among old customers.<br>
   <table>
   <tr>
     <td><b>Old Customers by Job Industry</b></td>
@@ -82,9 +82,9 @@ After the data cleaning process, exploratory analysis on the dataset is performe
   </table>
 
 - <b>Wealth Segmentation by Age Category</b><br> 
-  - Across all age categories the largest number of customers are from 'Mass Customer' Segment
-  - The next category comes from the 'High Net Worth' customers.
-  - In the age group 40-49, Affluent segment out performs the High Net Worth customers in terms of number of customers.<br>
+  - Across all age categories, the majority of customers belong to the 'Mass Customer' segment.
+  - The next largest group is 'High Net Worth' customers.
+  - In the 40-49 age group, the 'Affluent' segment outperforms the 'High Net Worth' segment in terms of customer numbers.<br>
   <table>
   <tr>
     <td><b>Old Customers Wealth by Age Group</b></td>
@@ -97,14 +97,14 @@ After the data cleaning process, exploratory analysis on the dataset is performe
   </table>
 
 - <b>Cars owned by States</b><br> 
-  - New South Wales has the largest number of people who donot own a car.
-  - In Victoria the proportion is quite even.
-  - In Queensland the number of people owning a car is greater than who donot have a car.
+  - New South Wales has the highest number of people who do not own a car.
+  - In Victoria, the proportions are fairly even.
+  - In Queensland, the number of people owning a car exceeds those who do not.
   <img src="data%20visualization/Car%20Owners%20by%20State.PNG" height="400" align="middle">
 
 
 ### 3. RFM Analysis and Customer Segmentation
-In this stage of analysis the customer segmentation was done by developing an RFM Model. The RFM (Recency, Frequency, Monetary) analysis is a behavior-based approach grouping customers into segments. It groups the customers on the basis of their previous purchase transactions.
+In this stage, customer segmentation was performed using an RFM Model. RFM (Recency, Frequency, Monetary) analysis groups customers based on their previous purchase transactions.
 
 In this analysis the customer segment was divided into 11 groups. The groups being : 
 - Platinum Customers
@@ -119,31 +119,31 @@ In this analysis the customer segment was divided into 11 groups. The groups bei
 - Becoming Loyal
 - Almost lost Customers
 
-As of the current state of the Automobile business the current distribution of customers segments is depicted below:
+The current distribution of customer segments in the automobile business is illustrated below:
 <img src="data%20visualization/Customer%20Segment%20Distribution.PNG" height="400" align="middle">
 
 ### 4. RFM Analysis: Scatter Plots
 #### Recency vs Monetary :
-The visualization shows that recent customers have purchased more products and generated relatively more revenue than the customers who visited a while ageo.<br>
+The visualization indicates that recent customers have made more purchases and generated more revenue compared to those who visited a while ago.<br>
 <img src="data%20visualization/Recency%20vs%20Monetary.PNG" height="400" align="middle"><br>
 
 #### Frequency vs Monetary : 
-The visualization shows that customers belonging to Platinum/ Very Loyal/ Becoming Loyal Customer Segments have a greater frequency and generate greater monetary for the business<br>
+The visualization shows that customers in the Platinum, Very Loyal, and Becoming Loyal segments have higher frequency and generate greater revenue.<br>
 <img src="data%20visualization/Frequency%20vs%20Monetary.PNG" height="400" align="middle"><br>
 
 ## Datasets Used
-The datasets used include:
-- __Raw_data.xlsx__: This excel file dataset included the following sheets of data:
-  -  __Transactions_data.xlsx__: This dataset included the transactions data of the customers across all the different states in Australia.
-  -  __NewCustomerList.xlsx__: This dataset included the new customers who visted the automobile bike company recently.
-  -  __CustomerDemographic.xlsx__: This dataset included entire details of the Customer Demographics.
-  -  __CustomerAddress.xlsx__: This dataset included the address of the Customers.
+The datasets utilized in this analysis include:
+- __Raw_data.xlsx__: This file contains the following sheets:
+  -  __Transactions_data.xlsx__: Contains transaction data of customers across different states in Australia.
+  -  __NewCustomerList.xlsx__: Includes new customers who recently visited the automobile bike company.
+  -  __CustomerDemographic.xlsx__: Provides comprehensive details of customer demographics.
+  -  __CustomerAddress.xlsx__: Contains customer addresses.
 
 
 ## Tools and Technologies used
 The tools used in this project include:
-- __Python__ - This was needed to conduct <b>Data Quality Assessment</b> and also for <b>Data Cleaning processes</b>. With Python libraries <b>pandas, matplotlib, seaborn</b> exploratory data analysis of the datasets and to gain useful insights from the data was possible.
-- __Tableau__ - This <b>Business Intelligence</b> tool was required to explore data and create charts, graphs, visualizations to come up with a <b>Sales Dashboard for Customer Segmenatation</b> for the automobile bike company. The Tableau Sales Dashboard can be found [here](https://public.tableau.com/profile/abhishek.chowdhury#!/vizhome/CustomerSegmentationDashboard_16175595616510/RFMDashboard)
+- __Python__ - Utilized for data quality assessment and data cleaning. Libraries such as pandas, matplotlib, and seaborn were used for exploratory data analysis to derive insights.
+- __Tableau__ - This business intelligence tool was used to explore data, create charts, graphs, and visualizations, and develop a Sales Dashboard for Customer Segmentation. The Tableau Sales Dashboard can be found [here](https://public.tableau.com/views/SalesDashboard_17201045476280/RFMDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 ## Built With
