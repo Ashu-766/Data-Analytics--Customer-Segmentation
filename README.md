@@ -1,19 +1,12 @@
 # Data Analytics Customer Segmentation
 
 ## Goal of the project
-The objective of this project is to carry out a Customer Segmentation Analysis for an automobile bike company. Customer segmentation is executed through the development of an RFM Model. RFM (Recency, Frequency, Monetary) analysis is a behavior-based methodology that classifies customers into segments based on their past purchase behaviors. This analysis categorizes customers into 11 distinct groups. The purpose of this segmentation is to identify which customer groups should be targeted to boost sales revenue for the company. A <b>Sales Dashboard for Customer Segmentation</b> has been created using <b>Tableau</b>, with data quality assessment and analysis conducted through <b>Python</b>.
+The objective of this project is to perform Customer Segmentation Analysis for an automobile bike company using an RFM (Recency, Frequency, Monetary) model. This behavior-based methodology classifies customers into segments based on their past purchase behaviors. The analysis identifies 11 distinct customer groups to target specific segments and boost sales revenue. A Sales Dashboard for Customer Segmentation was created using Tableau, with data quality assessment and analysis conducted in Excel. A <b>Sales Dashboard for Customer Segmentation</b> has been created using <b>Tableau</b>, with data quality assessment.
 
 
 ## Tableau Dashboard
 The Sales Dashboard for Customer Segmentation is accessible [here](https://public.tableau.com/views/SalesDashboard_17201045476280/RFMDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).<br>
 <img src="data%20visualization/Sales%20Dashboard.gif" height="500" align="middle"><br>
-
-<b>In case of failure of loading Jupyter Notebooks on Github, the following notebooks can be found in nbviewer. Click on the respective hyperlinks to view:</b>
-- [RFM Analysis.ipynb](https://nbviewer.jupyter.org/github/AbhishekGit-hash/Data-Analytics-Customer-Segmentation/blob/master/RFM%20Analysis.ipynb)
-- [DQA and Data Cleaning CustomerDemographic.ipynb](https://nbviewer.jupyter.org/github/AbhishekGit-hash/Data-Analytics-Customer-Segmentation/blob/master/DQA%20and%20Data%20Cleaning%20CustomerDemographic.ipynb)
-- [DQA and Data Cleaning NewCustomerList.ipynb](https://nbviewer.jupyter.org/github/AbhishekGit-hash/Data-Analytics-Customer-Segmentation/blob/master/DQA%20and%20Data%20Cleaning%20NewCustomerList.ipynb)
-- [DQA and Data Cleaning Transactions.ipynb](https://nbviewer.jupyter.org/github/AbhishekGit-hash/Data-Analytics-Customer-Segmentation/blob/master/DQA%20and%20Data%20Cleaning%20Transactions.ipynb)
-- [DQA and Data Cleaning Customer Address.ipynb](https://nbviewer.jupyter.org/github/AbhishekGit-hash/Data-Analytics-Customer-Segmentation/blob/master/DQA%20and%20Data%20Cleaning%20Customer%20Address.ipynb)
 
 
 ## Analysis Approach
@@ -142,10 +135,10 @@ The datasets utilized in this analysis include:
 
 ## Tools and Technologies used
 The tools used in this project include:
-- __Python__ - Utilized for data quality assessment and data cleaning. Libraries such as pandas, matplotlib, and seaborn were used for exploratory data analysis to derive insights.
+- __Excel__ - Utilized for data quality assessment, data cleaning, and preliminary analysis.
 - __Tableau__ - This business intelligence tool was used to explore data, create charts, graphs, and visualizations, and develop a Sales Dashboard for Customer Segmentation. The Tableau Sales Dashboard can be found [here](https://public.tableau.com/views/SalesDashboard_17201045476280/RFMDashboard?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 
 ## Built With
-- Python 3.8.2, Tableau
+- Excel, Tableau
 
