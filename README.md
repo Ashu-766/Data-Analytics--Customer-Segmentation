@@ -1,4 +1,4 @@
-# Data Analytics Customer Segmentation
+# Customer Segmentation for an Automobile Bike Company
 
 ## Goal of the project
 The objective of this project is to perform Customer Segmentation Analysis for an automobile bike company using an RFM (Recency, Frequency, Monetary) model. This behavior-based methodology classifies customers into segments based on their past purchase behaviors. The analysis identifies 11 distinct customer groups to target specific segments and boost sales revenue. A Sales Dashboard for Customer Segmentation was created using Tableau, with data quality assessment and analysis conducted in Excel. A <b>Sales Dashboard for Customer Segmentation</b> has been created using <b>Tableau</b>, with data quality assessment.
